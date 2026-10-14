@@ -1,0 +1,55 @@
+AZEROTH MORNING RADIO — ANIMATED TEXT PACK
+
+Six standalone, silent, transparent HTML overlays. No external fonts, images, account, or internet connection required.
+Designed for a 1920 x 1080 canvas. Each animation enters, holds, then exits after six seconds.
+These are Browser Source overlays, not video files. The surrounding canvas is transparent; the designed title plate is intentionally visible.
+
+OBS SETUP
+1. Unzip this entire folder.
+2. Add a Browser Source and enable Local file.
+3. Select one of the six numbered HTML files (not the portfolio homepage).
+4. Set Width to 1920 and Height to 1080. Position this source above the camera/game in Sources.
+5. Enable Refresh browser source when scene becomes active to replay on scene activation.
+6. Use Refresh cache of current page in the source properties to trigger a replay whenever needed.
+The source goes transparent when the six-second animation finishes. Switch away and back to the scene to trigger it again.
+If your computer prefers reduced motion, the overlays use a simple fade instead of moving text.
+
+Official OBS Browser Source documentation:
+https://obsproject.com/kb/browser-source
+
+RESEARCH NOTES
+The welcome and the show tagline are recurring branding. The other four are sourced episode excerpts or a segment cue; they are not all claimed to be recurring catchphrases.
+The premiere transcript was previously saved from the official episode page. Public automatic transcripts may contain transcription errors; spelling, casing and punctuation have been normalized in the graphics.
+No host voice or audio has been recreated. Kicker labels, visual treatments and animation are original presentation choices.
+Full episode links and approximate timestamps are in phrase-sources.json and below.
+
+Good Tuesday morning, everybody.
+Recurring welcome — Our Midnight Deep Dive · 00:52
+https://www.azerothmorningradio.com/our-midnight-deep-dive/
+Also appears at the opening of Good Morning Azeroth! and Gold Sink Inbound! Punctuation normalized.
+
+Warcraft for the rest of us.
+Show tagline — Official About page; also episode 2 · 05:30
+https://www.azerothmorningradio.com/about/
+The show describes this as its mission. Repeated in the episode 2 introduction.
+
+Keep the gold flowing.
+Shifty dialogue excerpt — Good Morning Azeroth! · 15:55–16:00
+https://www.azerothmorningradio.com/good-morning-azeroth/
+A short excerpt from Shifty’s sound-booth payment joke; not verified as a recurring catchphrase.
+
+The mute button is looking real friendly.
+Shifty dialogue excerpt — Good Morning Azeroth! · 16:00–16:03
+https://www.azerothmorningradio.com/good-morning-azeroth/
+The next line in Shifty’s payment joke; not verified as a recurring catchphrase.
+
+S.N.A.R.K. online.
+Segment device cue — Good Morning Azeroth! · 28:40–28:54
+https://www.azerothmorningradio.com/good-morning-azeroth/
+The transcript has “Snark online.” The on-screen acronym styling follows the device’s full name.
+
+The hearth is lit.
+Hearth running-joke excerpt — Good Morning Azeroth! · 53:47
+https://www.azerothmorningradio.com/good-morning-azeroth/
+Part of the hosts’ hearth pronunciation exchange. This exact line is verified in the premiere, not as a repeated sign-off.
+

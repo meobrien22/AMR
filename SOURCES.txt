@@ -1,0 +1,83 @@
+RESEARCH & CREATIVE NOTES — AZEROTH MORNING RADIO
+Prepared for the Bright Worlds collection, October 2026.
+
+METHOD
+The research used public show pages, episode transcripts and show notes, official Warcraft pages, and established streaming-background examples. Audio-analysis attempts did not produce a reliable result, so this pack is based on text research rather than a claim of having listened through the episodes. Public automatic transcripts can contain spelling errors.
+
+The ten folders cover recurring and occasional show features; they are not a claim that every segment appears in every episode. The hosts' current character races, classes, transmog, and exact in-game appearances were not sufficiently verified to build personalized character portraits. The Alliance emphasis follows the user's clarified direction.
+
+THE SHOW AND THE GOBLINS
+Azeroth Morning Radio:
+https://www.azerothmorningradio.com/
+
+Premiere, "Good Morning Azeroth!" (September 30, 2025):
+https://www.azerothmorningradio.com/good-morning-azeroth/
+
+Around 13:07, the premiere introduces S.N.A.R.K. as Segment Navigator and Randomizer Kiosk. Around 15:08–16:30, the sound-crew story introduces Shifty and Grifty: bargain-hired goblins, payment jokes, a mute-button threat, and Grifty's boredom with dangerous buttons. These details informed the headphones, coin, red button, randomizer, and sticker reactions. The physical designs of the two goblins are original interpretations, not verified official character art.
+
+HEROES CALL
+Community and player stories informed warm gathering places and guild-hall imagery.
+https://www.azerothmorningradio.com/blizzcon-2026-housing-hype/
+https://www.azerothmorningradio.com/our-midnight-deep-dive/
+
+GOBLIN NEWS NETWORK
+The show’s news format receives eight fully goblin-built environments: Undermine, Bilgewater Harbor, Booty Bay, Gadgetzan, Ratchet, a nostalgic Kezan race pit, a zeppelin control room, and a Lost Isles radio outpost. Riveted metal, copper pipes, machinery, coin counters and a small goblin reporter carry the theme throughout the scenes. The goblin newsroom layouts and props are creative additions, not claims of real broadcast facilities in the game.
+
+MAILBAG MAYHEM
+The glass bowl of questions in "Warcraft to Xbox?" (around 1:02:33) inspired the question bowl, letters, postal counters and courier stations.
+https://www.azerothmorningradio.com/warcraft-to-xbox/
+
+LORE LESSONS
+Archives, titan objects and scroll rooms reflect the show's lore-focused feature.
+https://www.azerothmorningradio.com/warcraft-pre-patch/
+https://podcasts.apple.com/us/podcast/lore-lessons-season-one-the-age-before-ages/id1842355669?i=1000773249833
+
+THIS MONTH IN AZEROTH
+A mention around 08:16 in "Did Blizzard Intentionally Leak Camelot?" informed the time-and-history visual theme. Bronze-dragon hourglasses, clockwork and calendars are design interpretations.
+https://podscan.fm/podcasts/azeroth-morning-radio-a-world-of-warcraft-podcast-1/episodes/did-blizzard-intentionally-leak-camelot-1
+
+THE HEALTH STONE
+The gamer-wellness feature informed restorative settings, green healthstones, water and simple stretching/rest props.
+https://www.azerothmorningradio.com/the-future-of-warcraft-forever-is-getting-wild/
+https://www.podscan.fm/podcasts/azeroth-morning-radio-a-world-of-warcraft-podcast/episodes/the-future-of-warcraft-forever-is-getting-wild-1
+
+DEEP THOUGHTS WITH SHIFTY
+The segment mention around 08:00 informed the quiet scenic pause. Shifty remains available as a separate sticker instead of occupying these backgrounds.
+https://podscan.fm/podcasts/azeroth-morning-radio-a-world-of-warcraft-podcast/episodes/world-of-warcraft-is-coming-to-dungeons-amp-dragons
+
+GOBBERBOX
+The call-in feature, referenced around 08:32, informed phones, communication crystals, message slips and caller lights.
+https://www.podscan.fm/podcasts/azeroth-morning-radio-a-world-of-warcraft-podcast/episodes/how-to-start-mythic-amp-raiding-in-world-of-warcraft
+
+COMMERCIAL BREAK
+Spoof-commercial material informed playful product-showroom scenes. The dwarven-jacuzzi idea is a callback; the rocket chair, snack stands and other products are original visual riffs.
+https://www.azerothmorningradio.com/our-midnight-deep-dive/
+https://www.azerothmorningradio.com/warcraft-pre-patch/
+
+RECENT SHOW CONTEXT
+The October 13, 2026 episode notes discuss Warcraft Forever community activity and include a goblin-auditor joke. This reinforced a community-first tone and a small financial-news joke in the Undermine newsroom.
+https://www.azerothmorningradio.com/why-warcraft-forever-is-bringing-players-together-again/
+
+WARCRAFT ART REFERENCES
+Official Midnight material informed renewed Eversong foliage, Silvermoon colors, and housing-related scenes.
+https://worldofwarcraft.blizzard.com/en-us/midnight
+https://worldofwarcraft.blizzard.com/en-us/news/24263349
+
+Blizzard's Undermine overview describes a goblin trade capital shaped by engineering, alchemy and competing cartels. This informed industrial silhouettes, green metal, copper machinery, financial humor and the underground city atmosphere.
+https://worldofwarcraft.blizzard.com/en-us/news/24174172/enter-the-hub-of-goblin-ingenuity-in-undermined-zone-overview
+https://worldofwarcraft.blizzard.com/en-us/news/24173073
+
+Lost Isles context:
+https://worldofwarcraft.blizzard.com/en-gb/news/10008456
+
+The final art is inspired by these settings. Geography, room interiors, skyline arrangements and decorative objects are invented or stylized. Dalaran and Kezan variants are deliberately historical/nostalgic rather than claims about their current state.
+
+BACKGROUND / OVERLAY DESIGN REFERENCES
+Nerd or Die's established overlay examples, including clean camera frames and restrained fantasy treatments, informed equal host framing, readable margins and avoiding a wall of repeated show logos. These are examples studied, not an objective ranking of the "best" backgrounds.
+https://nerdordie.com/blog/editorial/free-twitch-overlays-alerts-widgets/
+https://maker.nerdordie.com/webcam-frames
+https://nerdordie.com/tools/
+
+Elgato's video-conferencing setup guidance informed intentional background composition and bright, soft-looking light.
+https://www.elgato.com/us/en/explorer/products/camera/better-video-conferencing-setup/
+

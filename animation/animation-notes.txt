@@ -1,0 +1,5 @@
+Shifty silent goblin reaction animation
+Video ID: b7a7ef7f93c09e208ef7d7ae6aca7967
+Requested output: WebM with background removal; transparency must be verified from the returned artifact before claiming it.
+Status at submission: processing; the inline HeyGen player tracks completion automatically.
+Motion prompt: Animate this original green goblin sound-engineer sticker as a six-second silent reaction. Keep the character design, headphones, white cutout outline, clothing, gold coin and small red mute button consistent. Locked camera, full body always visible, no zoom. He lifts one eyebrow, tilts the gold coin slightly so it glints, then gives a sly wink while the other finger hovers teasingly over the mute button. Tiny shoulder chuckle, mouth closed, no speech, no extra objects or text. End near the opening pose. Keep movement contained and suitable as a podcast reaction sticker.

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#163a35">
+ <meta name="description" content="A multimedia concept portfolio for Azeroth Morning Radio: animated goblin hosts, Warcraft-inspired podcast backgrounds, character illustrations, and cute and classic stickers.">
+ <title>Azeroth Morning Radio · Multimedia Portfolio</title>
+ <link rel="stylesheet" href="portfolio.css">
+ <script src="portfolio-assets/portfolio-data.js" defer></script>
+ <script src="animated-text/phrases.js" defer></script>
+ <script src="portfolio.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to the portfolio</a>
+<div class="wrap">
+ <header class="masthead">
+  <a class="brand" href="#top" aria-label="Azeroth Morning Radio portfolio home"><span class="brand-mark" aria-hidden="true">a.</span><span><b>Azeroth Morning Radio</b><small>A multimedia portfolio for Jibbs &amp; Kash</small></span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#motion">Motion</a><a href="#artwork">Artwork</a><a href="#stickers">Stickers</a><a href="#animated-text">Animated text</a><a href="#capabilities">What I can create ↗</a></nav>
+ </header>
+ <main id="main">
+  <section class="hero" id="motion" aria-labelledby="hero-title">
+   <div class="hero-copy">
+    <div class="eyebrow">Made for Azeroth Morning Radio</div>
+    <h1 id="hero-title">Your show.<br>A whole<br><em>new world.</em></h1>
+    <p>I bring your on-air personality to the screen—through worlds, characters, and a little goblin mischief.</p>
+    <a class="text-link" href="#artwork">Explore the work <span aria-hidden="true">↘</span></a>
+   </div>
+   <div class="film-block" role="region" aria-roledescription="carousel" aria-label="Goblin host dance videos">
+    <div class="film-topline"><span>THE HOSTS, IN MOTION</span><span id="dance-count">01 / 02</span></div>
+    <div class="video-track" id="video-track" tabindex="0" aria-label="Dance videos. Swipe or use left and right arrow keys.">
+     <figure class="film" role="group" aria-roledescription="slide" aria-label="1 of 2: Dance 2">
+      <video controls loop playsinline preload="auto" aria-label="Play Dance 2: The WoW goblin dance" aria-describedby="dance-two-description"><source src="animation/dance-2-wow-goblin.mp4" type="video/mp4">Your browser cannot play this video. <a href="animation/dance-2-wow-goblin.mp4">Download Dance 2</a>.</video>
+      <figcaption><b>Dance 2 · The WoW goblin dance</b><span>10 seconds / Character animation</span></figcaption>
+      <p class="sr-only" id="dance-two-description">Two short green goblin versions of the hosts dance side by side, with bent-knee bounces and coordinated arm movements inspired by the male goblin dance emote. No spoken dialogue.</p>
+      <p class="media-error" hidden>The video could not load. <a href="animation/dance-2-wow-goblin.mp4">Open Dance 2 directly</a>.</p>
+     </figure>
+     <figure class="film" role="group" aria-roledescription="slide" aria-label="2 of 2: Dance 1" aria-hidden="true" inert>
+      <video controls loop playsinline preload="metadata" aria-label="Play Dance 1: Goblin groove" aria-describedby="dance-one-description"><source src="animation/dance-1-goblin-groove.mp4" type="video/mp4">Your browser cannot play this video. <a href="animation/dance-1-goblin-groove.mp4">Download Dance 1</a>.</video>
+      <figcaption><b>Dance 1 · Goblin groove</b><span>8 seconds / Character animation</span></figcaption>
+      <p class="sr-only" id="dance-one-description">The two illustrated goblin hosts perform a playful dance together with shuffles, head bobs, and a coin flourish. No spoken dialogue.</p>
+      <p class="media-error" hidden>The video could not load. <a href="animation/dance-1-goblin-groove.mp4">Open Dance 1 directly</a>.</p>
+     </figure>
+    </div>
+    <div class="video-bottom">
+     <div class="dance-options" role="group" aria-label="Choose a dance"><button data-dance="0" aria-pressed="true">Dance 2</button><button data-dance="1" aria-pressed="false">Dance 1</button></div>
+     <div class="arrow-controls"><button class="arrow" id="dance-prev" aria-label="Previous dance" disabled>←</button><button class="arrow" id="dance-next" aria-label="Next dance">→</button></div>
+    </div>
+    <p class="film-note">Press play. Swipe between the two dances. <a id="dance-download" href="animation/dance-2-wow-goblin.mp4" download>Download this video ↓</a></p>
+    <span class="sr-only" id="dance-status" aria-live="polite"></span>
+   </div>
+  </section>
+  <div class="overview"><p>A world of possibilities for your next chapter.</p><div class="facts"><span><b>80</b> backgrounds</span><span><b>14</b> host stickers</span><span><b>02</b> dance films</span></div></div>
+  <section class="section" id="artwork" aria-labelledby="artwork-title">
+   <div class="section-head"><div><div class="eyebrow">01 / The wider collection</div><h2 id="artwork-title">Ideas worth<br><em>getting lost in.</em></h2></div><p class="aside-copy">Beyond the 80 backgrounds: character studies, studio concepts, host layouts, and early experiments. Take a look around.</p></div>
+   <div id="art-carousel" role="region" aria-roledescription="carousel" aria-label="Extra artwork outside the 80 backgrounds">
+    <div class="toolbar"><label for="art-filter">Explore <select id="art-filter"><option value="all">All extra artwork</option></select></label><button class="toggle" id="art-pause" aria-pressed="false">Ⅱ Pause carousel</button></div>
+    <div class="art-track" id="art-track" tabindex="0" aria-label="Artwork carousel. Swipe or use left and right arrow keys."></div>
+    <div class="gallery-foot"><span><b id="extra-count">72</b> extra images. Select any artwork for a closer look.</span><div class="arrow-controls"><span id="art-counter">01 / 72</span><button class="arrow" id="art-prev" aria-label="Previous artwork">←</button><button class="arrow" id="art-next" aria-label="Next artwork">→</button></div></div>
+    <span class="sr-only" id="art-announcement" aria-live="polite"></span>
+   </div>
+  </section>
+ </main>
+</div>
+<section class="library" aria-labelledby="library-title">
+ <div class="wrap library-inner">
+  <figure class="library-picture"><a href="backgrounds.html#01-heroes-call"><img src="portfolio-assets/previews/01-heroes-call.webp" alt="A bright Warcraft-inspired Stormwind rooftop studio overlooking blue-roofed towers, with an Alliance flag." width="1000" height="563" loading="lazy"></a><figcaption class="library-caption">Heroes Call / Stormwind Rooftop / One of 80 widescreen scenes</figcaption></figure>
+  <div><div class="eyebrow">02 / The background library</div><h2 id="library-title">One show.<br><em>80 places to take it.</em></h2><p>Ten parts of the show. Eight visual directions for each. From goblin newsrooms to peaceful moonwell gardens, with layouts for hosts recording miles apart.</p><a class="solid-link" href="backgrounds.html">Browse all 80 backgrounds <span aria-hidden="true">↗</span></a><nav class="section-links" id="section-links" aria-label="Background collections"></nav></div>
+ </div>
+</section>
+<section class="stickers section" id="stickers" aria-labelledby="stickers-title">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">03 / Pocket-sized personality</div><h2 id="stickers-title">Two looks.<br><em>Same trouble.</em></h2></div><p class="aside-copy">Your hosts, with a goblin twist. Pick the cute treatment or the classic look, then find a reaction for the moment.</p></div>
+  <div class="sticker-controls"><div class="sticker-tabs" role="tablist" aria-label="Sticker style"><button id="cute-tab" role="tab" data-sticker-style="cute" aria-controls="sticker-panel" aria-selected="true">Cute <span aria-hidden="true">/ 07</span></button><button id="classic-tab" role="tab" data-sticker-style="classic" aria-controls="sticker-panel" aria-selected="false" tabindex="-1">Classic <span aria-hidden="true">/ 07</span></button></div><a id="sticker-zip" href="downloads/Azeroth-Morning-Radio-Cute-Host-Stickers.zip" download>Download all 7 cute stickers ↓</a></div>
+  <div id="sticker-panel" role="tabpanel" aria-labelledby="cute-tab"><div class="sticker-grid" id="sticker-grid"></div><p class="sticker-note"><span id="sticker-description"></span><br>Transparent PNGs for overlays, chats, and social posts. Captions are playful show-inspired concepts.</p></div>
+ </div>
+</section>
+<section class="section wrap" id="animated-text" aria-labelledby="text-title">
+ <div class="section-head"><div><div class="eyebrow">04 / The words have entered the chat</div><h2 id="text-title">Familiar lines.<br><em>A proper entrance.</em></h2></div><p class="aside-copy">Their welcome. Their tagline. A few goblin threats. Six animated text overlays drawn from the show, ready to make an entrance.</p></div>
+ <div class="text-studio">
+  <div class="text-monitor">
+   <div class="film-topline"><span>ANIMATED TEXT / LIVE PREVIEW</span><span>06 SECOND CUES</span></div>
+   <div class="text-stage" id="text-stage"><iframe id="text-frame" title="Animated show text preview" src="animated-text/01-good-tuesday-morning.html?preview=1" loading="lazy"></iframe></div>
+   <div class="text-player-controls"><button class="solid-link" id="text-replay">▶ Play animation</button><button class="text-background-toggle" id="text-background" aria-pressed="false">Show transparency</button><span id="text-play-state" aria-live="polite">Ready to play</span></div>
+   <div class="text-meta"><p id="phrase-kind"></p><a id="phrase-source" target="_blank" rel="noopener">View source ↗</a><p id="phrase-note"></p></div>
+  </div>
+  <div><div class="phrase-list" id="phrase-list" role="group" aria-label="Choose an animated phrase"></div><div class="overlay-downloads"><a class="text-link" id="phrase-download" download>Download this overlay <span aria-hidden="true">↓</span></a><a href="animated-text/AMR-Animated-Text-Overlays.zip" download>Download all six as a ZIP ↓</a></div></div>
+ </div>
+ <details class="overlay-help"><summary>Bring the animated text into your show</summary><div><p>Download and unzip the pack. In OBS, add a <b>Browser Source</b>, enable <b>Local file</b>, and select one of the six numbered HTML files. Set the source to <b>1920 × 1080</b> and place it above your cameras.</p><p>Each cue enters, holds, and fades away after six seconds. Enable <b>Refresh browser source when scene becomes active</b>, or use <b>Refresh cache of current page</b> in its properties to replay it. These are silent HTML overlays with a transparent canvas; the preview scenery is not included.</p><p><a href="animated-text/READ-ME.txt">Full setup guide &amp; phrase sources</a> · <a href="https://obsproject.com/kb/browser-source" target="_blank" rel="noopener">OBS Browser Source documentation ↗</a></p></div></details>
+</section>
+<section class="section wrap capabilities" id="capabilities" aria-labelledby="capabilities-title">
+ <div><div class="eyebrow">05 / What I can create for you</div><h2 id="capabilities-title">Your voice.<br>Your world.<br><em>Across every screen.</em></h2><p class="intro">I can build a visual world around the things that make your show yours: the banter, the recurring bits, the characters, and the community.</p></div>
+ <div>
+  <article class="offer"><span>01</span><div><h3>A home for the video podcast</h3><p>Custom Warcraft-inspired sets, two-host screen layouts, segment backgrounds, and intermission scenes that feel like part of the same show.</p></div></article>
+  <article class="offer"><span>02</span><div><h3>Characters with personality</h3><p>Goblin host illustrations, expressive sticker collections, reaction graphics, and visual jokes built around your on-air chemistry.</p></div></article>
+  <article class="offer"><span>03</span><div><h3>Moments that move</h3><p>Character animations, short dance clips, segment bumpers, and playful transitions that give your video episodes their own rhythm.</p></div></article>
+  <article class="offer"><span>04</span><div><h3>More ways to share the show</h3><p>Episode artwork, thumbnails, quote graphics, and short promotional edits—adapted for the places your listeners watch, scroll, and share.</p></div></article>
+ </div>
+</section>
+<div class="wrap">
+ <section class="closing" aria-labelledby="closing-title"><div><h2 id="closing-title">Let's give the show a world of its own.</h2><p>Start with a favorite scene, a sticker style, or a little goblin dancing.</p></div><a class="solid-link" href="#motion">Watch the hosts dance <span aria-hidden="true">↑</span></a></section>
+ <footer class="footer"><span>Azeroth Morning Radio / Multimedia concept portfolio</span><details><summary>About this collection</summary><p>This portfolio includes 80 backgrounds, <span id="extra-total">72</span> additional artworks (including both host sticker collections), and two dance clips. Early concepts are included to show the range of ideas; some differ from the final direction.</p><p>Warcraft-inspired fan concepts. Dance 2 is an animated interpretation of the in-game male goblin dance, not an exported game animation. <a href="SOURCES.txt">Background research</a> · <a href="https://warcraft.wiki.gg/wiki/Dancing">Dance reference</a>.</p></details><a href="#top">Back to top ↑</a></footer>
+</div>
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+ <div class="viewer-head"><h2 id="viewer-title">Artwork preview</h2><button id="viewer-close" aria-label="Close artwork preview" autofocus>Close ×</button></div>
+ <div class="viewer-stage"><img id="viewer-image" alt=""></div>
+ <div class="viewer-bottom"><div><p id="viewer-description"></p><a id="viewer-download" download>Download original PNG ↓</a></div><div class="arrow-controls"><button id="viewer-prev" aria-label="Previous preview">←</button><span class="viewer-counter" id="viewer-counter"></span><button id="viewer-next" aria-label="Next preview">→</button></div></div>
+</dialog>
+<noscript><p class="wrap">JavaScript enables the carousels and sticker previews. You can still <a href="backgrounds.html">open the background collection</a> or download the <a href="downloads/Azeroth-Morning-Radio-Cute-Host-Stickers.zip">cute stickers</a> and <a href="downloads/Azeroth-Morning-Radio-Classic-Host-Stickers.zip">classic stickers</a>.</p></noscript>
+</body>
+</html>
