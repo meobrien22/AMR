@@ -58,7 +58,41 @@ motion.addEventListener('change',()=>{paused=motion.matches;updatePause();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)videos.forEach(v=>v.pause());resetRotation();});
 renderArt();updatePause();
 
-$('section-links').innerHTML=data.backgrounds.map(s=>`<a href="backgrounds.html#${s.key}">${escapeHTML(s.title)}<span aria-hidden="true">↗</span></a>`).join('');
+const backgroundCollections=window.amrBackgroundCollections;
+const backgroundRails=[];
+backgroundCollections.forEach(collection=>{
+ const region=document.querySelector(`[data-background-carousel="${collection.key}"]`);
+ const rail=region.querySelector('.background-track'),cards=[...rail.querySelectorAll('.background-card')];
+ const previous=region.querySelector('[data-background-prev]'),next=region.querySelector('[data-background-next]');
+ const counter=region.querySelector('[data-background-counter]'),status=region.querySelector('[data-background-status]');
+ let index=0,scrollTimeout;
+ function showPosition(announce=false){
+  counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;
+  previous.disabled=index===0;next.disabled=index===cards.length-1;
+  if(announce)status.textContent=`${collection.title}: example ${index+1} of ${cards.length}, ${collection.items[index].title}.`;
+ }
+ function goTo(requested,announce=true){
+  index=Math.max(0,Math.min(cards.length-1,requested));showPosition(announce);
+  rail.scrollTo({left:cards[index].offsetLeft-cards[0].offsetLeft,behavior:behavior()});
+ }
+ function syncScroll(){
+  index=cards.reduce((nearest,card,n)=>Math.abs(card.offsetLeft-cards[0].offsetLeft-rail.scrollLeft)<Math.abs(cards[nearest].offsetLeft-cards[0].offsetLeft-rail.scrollLeft)?n:nearest,0);
+  showPosition();
+ }
+ previous.addEventListener('click',()=>goTo(index-1));next.addEventListener('click',()=>goTo(index+1));
+ rail.addEventListener('scroll',()=>{clearTimeout(scrollTimeout);scrollTimeout=setTimeout(syncScroll,140);},{passive:true});
+ rail.addEventListener('keydown',e=>{
+  if(e.target!==rail||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
+  e.preventDefault();goTo(e.key==='Home'?0:e.key==='End'?cards.length-1:index+(e.key==='ArrowRight'?1:-1));
+ });
+ rail.addEventListener('click',e=>{const button=e.target.closest('[data-background]');if(button)showImage(collection.items,Number(button.dataset.background),button);});
+ const focusObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  entry.target.inert=!entry.isIntersecting;entry.target.setAttribute('aria-hidden',String(!entry.isIntersecting));
+ }),{root:rail,threshold:.01});
+ cards.forEach(card=>focusObserver.observe(card));
+ backgroundRails.push(()=>{clearTimeout(scrollTimeout);rail.scrollTo({left:cards[index].offsetLeft-cards[0].offsetLeft,behavior:'instant'});});
+ showPosition();
+});
 let stickerStyle='cute';
 function renderStickers(style){
  stickerStyle=style;
@@ -80,7 +114,7 @@ let previewItems=[],previewIndex=0,previewTrigger;
 function showImage(list,index,trigger){
  previewItems=list;previewIndex=(index+list.length)%list.length;const i=list[previewIndex];
  $('viewer-title').textContent=i.title;$('viewer-image').src=i.path;$('viewer-image').alt=i.title;
- $('viewer-description').textContent=i.group?`${i.group} · ${i.label}`:`${stickerStyle==='cute'?'Cute':'Classic'} host collection · Transparent PNG`;
+ $('viewer-description').textContent=i.group?`${i.group} · ${i.label}${i.description?' · '+i.description:''}`:`${stickerStyle==='cute'?'Cute':'Classic'} host collection · Transparent PNG`;
  $('viewer-download').href=i.path;$('viewer-counter').textContent=`${previewIndex+1} / ${list.length}`;
  if(!$('viewer').open){previewTrigger=trigger||document.activeElement;$('viewer').showModal();clearInterval(artTimer);}
 }
@@ -91,8 +125,8 @@ $('viewer-prev').addEventListener('click',()=>showImage(previewItems,previewInde
 $('viewer').addEventListener('click',e=>{if(e.target===$('viewer')){const r=$('viewer').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('viewer').close();}});
 $('viewer').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();showImage(previewItems,previewIndex+(e.key==='ArrowRight'?1:-1));}});
 $('viewer').addEventListener('close',()=>{previewTrigger?.focus({preventScroll:true});resetRotation();});
-window.addEventListener('resize',()=>{track.scrollTo({left:films[activeDance].offsetLeft-films[0].offsetLeft,behavior:'instant'});});
-if(data.backgrounds.some(i=>'#'+i.key===location.hash)||location.hash==='#stickers-classic')location.replace('backgrounds.html'+location.hash);
+window.addEventListener('resize',()=>{track.scrollTo({left:films[activeDance].offsetLeft-films[0].offsetLeft,behavior:'instant'});backgroundRails.forEach(align=>align());});
+if(location.hash==='#stickers-classic')location.replace('backgrounds.html'+location.hash);
 
 const phrases=window.amrPhrases;
 let activePhrase=0,textTimer;
